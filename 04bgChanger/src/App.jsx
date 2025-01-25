@@ -3,12 +3,15 @@ import { useState } from 'react'
 function App() {
     const [color, setColor] = useState('olive')
 
-    const generateRandomColor = () => {
-        const randomColor = `#${Math.floor(Math.random() * 16777215).toString(
-            16,
-        )}`
-        setColor(randomColor)
-    }
+const generateRandomColor = () => {
+    const randomRed = Math.floor(Math.random() * 256) // Random number between 0-255
+    const randomGreen = Math.floor(Math.random() * 256) // Random number between 0-255
+    const randomBlue = Math.floor(Math.random() * 256) // Random number between 0-255
+
+    const randomColor = `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`
+    setColor(randomColor)
+}
+
 
     return (
         <div
