@@ -9,6 +9,8 @@ import Contact from './components/Contact.jsx'
 import User from './components/User.jsx'
 import Github, { githubInfoLoader } from './components/Github.jsx'
 
+// console.log('githubInfoLoader',githubInfoLoader)
+
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<App />}>
