@@ -1,7 +1,3 @@
-Sure! These are some of the most commonly used React hooks. Let’s break them down one by one with simple examples:
-
----
-
 ### **1. `useState`:**
 - **Purpose**: Allows you to create and manage state in a functional component.
 - **What it does**: Tracks and updates values that your component uses, like variables but reactive.
